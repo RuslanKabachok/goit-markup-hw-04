@@ -132,6 +132,29 @@ img {
   color: var(--grey-color);
 }
 
+.contact-img-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--grey-color);
+
+  align-content: center;
+  justify-content: center;
+}
+
+.contact-img-phone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--grey-color);
+}
+
+.contact-item {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 .contact-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -139,6 +162,24 @@ img {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
+}
+
+.contact-img-envelope:hover,
+.contact-img-envelope:focus {
+  fill: var(--accent-color);
+}
+
+.contact-link:hover,
+.contact-link:focus,
+.contact-link:hover .contact-img-phone,
+.contact-link:focus .contact-img-phone {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.contact-img-phone:hover,
+.contact-img-phone:focus {
+  fill: var(--accent-color);
 }
 
 /*Hero*/
@@ -195,9 +236,6 @@ img {
   padding-bottom: 25px;
   border-radius: 4px;
   margin-bottom: 30px;
-}
-
-.list-pic {
 }
 
 .spec-item {
@@ -268,6 +306,7 @@ img {
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .link-icon:hover,
@@ -345,7 +384,6 @@ img {
 .clients-link:focus .clients-img {
   fill: var(--accent-color);
   color: var(--accent-color);
-  border: var(--accent-color);
 }
 
 .clients-item:hover,
@@ -401,6 +439,8 @@ img {
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: inline;
+  padding-left: 215px;
 }
 
 .footer-logo {
@@ -413,6 +453,25 @@ img {
 
   margin-right: 93px;
   margin-bottom: 20px;
+}
+
+.join {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  display: inline;
+}
+
+.link-container {
+  justify-content: center;
+  align-items: center;
+  padding-top: 72px;
 }
 
 .nav-link {
