@@ -110,6 +110,30 @@ img {
   color: var(--accent-color);
 }
 
+.menu-link.current::after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 4px;
+  left: 453px;
+  top: 76px;
+
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
+.portfolio.current::after {
+  content: "";
+  position: absolute;
+  width: 78px;
+  height: 4px;
+  left: 551px;
+  top: 76px;
+
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
 .menu-link {
   font-weight: 500;
   font-size: 14px;
@@ -129,6 +153,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--grey-color);
 }
 
@@ -137,9 +164,6 @@ img {
   height: 12px;
   margin-right: 10px;
   fill: var(--grey-color);
-
-  align-content: center;
-  justify-content: center;
 }
 
 .contact-img-phone {
@@ -160,25 +184,12 @@ img {
 }
 
 .contact-link:hover,
-.contact-link:focus {
-  color: var(--accent-color);
-}
-
-.contact-img-envelope:hover,
-.contact-img-envelope:focus {
-  fill: var(--accent-color);
-}
-
-.contact-link:hover,
 .contact-link:focus,
+.contact-link:hover .contact-img-envelope,
+.contact-link:focus .contact-img-envelope,
 .contact-link:hover .contact-img-phone,
 .contact-link:focus .contact-img-phone {
   color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
-.contact-img-phone:hover,
-.contact-img-phone:focus {
   fill: var(--accent-color);
 }
 
@@ -376,6 +387,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
 }
 
 .clients-link:hover,
@@ -384,10 +399,6 @@ img {
 .clients-link:focus .clients-img {
   fill: var(--accent-color);
   color: var(--accent-color);
-}
-
-.clients-item:hover,
-.clients-item:focus {
   border-color: var(--accent-color);
 }
 
@@ -402,16 +413,6 @@ img {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
-}
-
-.clients-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
 }
 
 .clients-title {
