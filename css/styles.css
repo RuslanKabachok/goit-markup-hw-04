@@ -85,8 +85,6 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--accent-color);
-
-  margin-right: 93px;
 }
 
 .contact-container {
@@ -315,8 +313,8 @@ img {
 .link-list {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
   margin-top: 16px;
+  justify-content: center;
 }
 
 .link-list-item:not(:last-child) {
@@ -433,13 +431,10 @@ img {
 .footer {
   display: flex;
   background-color: #2f303a;
-  width: 1600px;
   margin: 0px auto;
-}
-
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
+  height: 252px;
 }
 
 .footer-logo {
@@ -449,8 +444,6 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--accent-color);
-
-  margin-right: 93px;
   margin-bottom: 20px;
 }
 
@@ -499,20 +492,12 @@ img {
 
 .container-footer {
   display: flex;
-  background-color: #2f303a;
-  width: 1600px;
-  margin: 0px auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 }
 
-.link-container {
-  justify-content: center;
+/*.link-holder {
   align-items: center;
-  padding-top: 72px;
-  padding-bottom: 100px;
-}
+  justify-content: center;
+}*/
 
 .nav-link {
   font-size: 14px;
@@ -529,6 +514,10 @@ img {
 
 .link:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.address-container {
+  margin-right: 70px;
 }
 
 .address-link {
